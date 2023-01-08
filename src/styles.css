@@ -51,13 +51,51 @@ h3 {
   background-color: white;
   text-decoration: none;
 }
+
+section {
+  margin: 80px 100px;
+}
+
+img {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 60px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  text-align: start;
+  margin: 0;
+}
+main h3 {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  opacity: 0.5;
+  text-align: start;
+  margin: 0;
+}
+
+main p {
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.7;
+}
 section {
   max-width: 1200px;
 }
 footer {
-  background-color: #681a1e;
   color: white;
-  padding: 100px;
+  padding: 40px 40px;
   background-image: linear-gradient(
       rgba(51, 12, 15, 0.8),
       rgba(51, 12, 15, 0.8)
@@ -68,10 +106,8 @@ footer {
   background-size: cover;
 }
 
-.grid-container {
-  display: grid;
+.grid-3-columns {
   grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 40px;
 }
 
 footer h4 {
@@ -80,22 +116,25 @@ footer h4 {
   line-height: 1.5px;
   opacity: 0.7;
 }
-footer p {
-  font-size: 16px;
-  line-height: 2;
-  opacity: 0.7;
-}
 
 footer ul {
   list-style: none;
   padding-left: 0;
 }
-
+footer p {
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.7;
+}
 footer a {
   color: white;
 }
 
 @media (max-width: 800px) {
+  section {
+    margin: 50px 70px;
+  }
+
   .hero {
     padding: 60px 0;
   }
@@ -121,14 +160,19 @@ footer a {
     font-size: 10px;
   }
 
+  main h2 {
+    font-size: 30px;
+  }
+
   footer {
     padding: 50px 50px;
   }
 
-  footer .grid-container {
+  .grid {
     grid-gap: 20px;
     grid-template-columns: 1fr;
   }
+
   footer h4 {
     font-size: 15px;
     line-height: 1.5;
