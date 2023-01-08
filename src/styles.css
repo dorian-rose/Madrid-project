@@ -7,6 +7,13 @@ body {
   margin: 0 auto;
 }
 
+.text-center {
+  text-align: center;
+}
+.small-margin {
+  margin: 20px 30px;
+}
+
 h1 {
   font-weight: 700;
   font-size: 96px;
@@ -53,11 +60,16 @@ h3 {
 }
 
 section {
-  margin: 80px 100px;
+  padding: 80px 100px;
+  max-width: 1200px;
+}
+section.secondary {
+  background-color: whitesmoke;
 }
 
 img {
   width: 100%;
+  display: block;
 }
 
 .grid {
@@ -69,12 +81,19 @@ img {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-2-columns-no-gap {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+}
 main h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.5;
   text-align: start;
-  margin: 0;
+  margin: 10px 0;
 }
 main h3 {
   font-size: 16px;
@@ -84,29 +103,62 @@ main h3 {
   text-align: start;
   margin: 0;
 }
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.5;
+}
 
 main p {
   font-size: 16px;
   line-height: 1.5;
   opacity: 0.7;
+  margin: 0;
 }
-section {
-  max-width: 1200px;
+
+.card {
+  background-color: #ffff;
+  margin: 60px 0;
 }
+
+.card-body {
+  margin: 30px 30px;
+}
+
+.card-footer {
+  margin: 30px 30px 50px;
+}
+
+.card .btn {
+  display: block;
+  color: white;
+  background-color: #330c0fcc;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 30px;
+}
+
 footer {
   color: white;
   padding: 40px 40px;
-  background-image: linear-gradient(
-      rgba(51, 12, 15, 0.8),
-      rgba(51, 12, 15, 0.8)
-    ),
+  background-image: linear-gradient(#330c0fcc, #330c0fcc),
     url(../media/metropolitan.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.grid-3-columns {
+footer .grid-3-columns {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
