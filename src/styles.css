@@ -44,7 +44,7 @@ h3 {
   padding: 150px 60px;
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/media/plaza-mayor.jpeg);
+    url(../media/plaza-mayor.jpeg);
   background-size: cover;
 }
 
@@ -158,7 +158,7 @@ footer {
   color: white;
   padding: 40px 40px;
   background-image: linear-gradient(#330c0fcc, #330c0fcc),
-    url(../media/metropolitan.jpeg);
+    url(/media/metropolitan.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
