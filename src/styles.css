@@ -190,7 +190,8 @@ footer a {
 
 @media (max-width: 800px) {
   section {
-    margin: 50px 70px;
+    margin: 20px;
+    padding: 20px;
   }
 
   .hero {
@@ -221,9 +222,22 @@ footer a {
     grid-gap: 20px;
     grid-template-columns: 1fr;
   }
-
+  .grid-3-columns {
+    margin-top: 20px;
+  }
   .card-header img {
     display: none;
+  }
+  .card {
+    margin: 10px 0;
+  }
+
+  .card-body {
+    margin: 20px;
+  }
+
+  .card-footer {
+    margin: 20px;
   }
 
   .embed {
@@ -235,7 +249,7 @@ footer a {
   }
 
   footer {
-    padding: 50px 50px;
+    padding: 20px;
   }
 
   footer h4 {
